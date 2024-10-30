@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
     <header>
     <h1>AI Englsih Poem Generator</h1>
     </header>
@@ -14,11 +15,11 @@
     <main>
 <form>
     
-    <input type="text" placeholdder=" Enter title of the poem" autofocus required autocomplete="off"/>
-    <input type="submit"/>
+    <input type="text" placeholdder=" Enter title of the poem" autofocus required autocomplete="off" class="prompt"/>
+    <input type="submit" class="submit-button"/>
 </form>
 
-<div>
+<div class="poem">
     This is the poem
     <br/>
     I love you
@@ -31,6 +32,7 @@
              <a href="https://app.netlify.com/sites/spontaneous-pavlova-8da5f5/overview" target="_blank ">
                 hosted on netlify </a>
     </footer>
+   </div>
    <script src="src/index.js"></script> 
 </body>
 </html>
