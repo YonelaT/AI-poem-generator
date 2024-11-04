@@ -20,10 +20,6 @@ function generatePoem(event)
     let poemElement=document.querySelector("hidden");
     poemElement.classList.remove("hidden");
     poemElement.innerHTML=` <div class="blink"> ⌛Generating english poem about ❤️${instructionInput.value} </div>`
-
-    console.log("Generating Poe=m");
-    console.log(`Prompt: ${prompt}`);
-    console.log(`Context: ${context}`);
     
     axios.get(apiURL).then(displayPoem);
 
