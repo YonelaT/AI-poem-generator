@@ -17,6 +17,14 @@ function generatePoem(event)
     let context=`Generatean english poem then add <br> between sentences and then  sign with <strong>SheCodes AI</strong> at the bottom`;
     let apiURL=`https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apikey}`
     
+    let poemElement=document.querySelector("hidden");
+    poemElement.classList.remove("hidden");
+    poemElement.innerHTML=` <div class="blink"> ⌛Generating english poem about ❤️${instructionInput.value} </div>`
+
+    console.log("Generating Poe=m");
+    console.log(`Prompt: ${prompt}`);
+    console.log(`Context: ${context}`);
+    
     axios.get(apiURL).then(displayPoem);
 
    

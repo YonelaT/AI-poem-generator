@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -14,15 +16,15 @@
 
     <main>
 <form>
-    
+    <div class ="form-container">
     <input id="poem-generator-form" type="text" placeholdder=" Enter title of the poem" autofocus required autocomplete="off" class="prompt" id="user-instructions"/>
     <input type="submit" class="submit-button"/>
 </form>
-
-<div class="poem" id="poem">
+<small class="hint"> i.e: Love,school,flower</small>
 </div>
-
-    </main>
+<div class="poem hidden " id="poem">
+</div>
+ </main>
     <footer>
         This AI project was coded by Yonela Tsutsu and  is  <a href="https://github.com/YonelaT/AI-poem-generator" target="_blank" >
             open-sourced on GitHub </a> and is 
@@ -30,6 +32,7 @@
                 hosted on netlify </a>
     </footer>
    </div>
+
    <script src="src/index.js"></script> 
 </body>
 </html>

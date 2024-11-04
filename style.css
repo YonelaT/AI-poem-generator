@@ -21,14 +21,23 @@ h1 {
     color: rgb(46, 44, 44);
     text-align: center;
 }
-
-form {
-    padding: 30px;
+.form-container{
     background-color: white;
-    border-radius: 10px;
-    display: flex;
+    margin-bottom:30px;
+    padding:15px  20px;
     box-shadow: rgb(235, 170, 249);
     margin-bottom: 30px;
+}
+.hint{
+    line-height: 1.5;
+    margin-top: 5px;
+    opacity:0.6 ;
+    font-size: 12px;
+}
+
+form {
+    display: flex;
+    
 }
 
 .prompt {
@@ -64,10 +73,19 @@ form {
 .poem strong{
     color: rgb(233, 197, 210);
 }
-
-
+.hidden{
+    
+}
 footer{
     text-align: center;
     margin-top: 30px;
     font-size:10px ;
 }
+@keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+  .blink {
+    animation: blink 1s step-start 0s infinite;
+  }
